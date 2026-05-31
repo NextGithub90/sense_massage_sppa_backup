@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sense Massage Spa Jakarta - Panggilan 24 Jam Profesional</title>
+
+    <meta name="description"
+        content="Sense Massage Spa Jakarta menyediakan layanan massage panggilan 24 jam ke rumah, hotel, dan apartemen dengan terapis profesional dan bersertifikat di Jakarta.">
+    <meta name="keywords"
+        content="massage panggilan jakarta, pijat panggilan jakarta, spa jakarta, massage 24 jam jakarta, terapis pijat jakarta, pijat tradisional jakarta">
+    <meta name="author" content="Sense Massage Spa">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sensemassagejkt.com/">
+    <meta property="og:title" content="Sense Massage Spa Jakarta - Panggilan 24 Jam Profesional">
+    <meta property="og:description"
+        content="Layanan massage dan spa panggilan 24 jam terbaik di Jakarta. Nikmati relaksasi bersama terapis profesional kami.">
+    <meta property="og:image" content="https://sensemassagejkt.com/images/ajib.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sensemassagejkt.com/">
+    <meta property="twitter:title" content="Sense Massage Spa Jakarta - Panggilan 24 Jam Profesional">
+    <meta property="twitter:description"
+        content="Layanan massage dan spa panggilan 24 jam terbaik di Jakarta. Nikmati relaksasi bersama terapis profesional kami.">
+    <meta property="twitter:image" content="https://sensemassagejkt.com/images/ajib.webp">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sensemassagejkt.com/">
+
+    <!-- Schema Markup untuk Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HealthAndBeautyBusiness",
+      "name": "Sense Massage Spa Jakarta",
+      "image": "https://sensemassagejkt.com/images/ajib.webp",
+      "@id": "https://sensemassagejkt.com/",
+      "url": "https://sensemassagejkt.com/",
+      "telephone": "+628999921727",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kawasan Sudirman",
+        "addressLocality": "Jakarta Selatan",
+        "addressRegion": "DKI Jakarta",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -6.225014,
+        "longitude": 106.805822
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.instagram.com/sensemassagejkt",
+        "https://www.facebook.com/sensemassagejkt"
+      ]
+    }
+    </script>
+
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brown: '#6B4423', // Dasar coklat
+                        olive: '#415942', // Dominant dark olive green (Hijau 30%)
+                        gold: '#C5A059',  // Elegant gold (Kuning 70%)
+                        sand: '#F4F2EB',  // Light warm background
+                        dark: '#1F2937'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Lora', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="antialiased">
+
+    <!-- Navbar -->
+    <nav id="navbar"
+        class="fixed w-full z-50 transition-all duration-300 bg-white/10 backdrop-blur-sm border-b border-white/10 py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <img src="images/logo1.jpeg" alt="Sense Massage Spa Logo" class="h-10 w-auto rounded-md">
+                <span class="font-serif font-bold text-2xl text-white tracking-wide" id="nav-brand">Sense Massage <span
+                        class="text-gold font-light">Spa</span></span>
+            </div>
+
+            <!-- Desktop Links -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#home"
+                    class="text-white/90 hover:text-gold font-medium text-sm transition-colors nav-link">Home</a>
+                <a href="#about"
+                    class="text-white/90 hover:text-gold font-medium text-sm transition-colors nav-link">Tentang
+                    Kami</a>
+                <a href="#services"
+                    class="text-white/90 hover:text-gold font-medium text-sm transition-colors nav-link">Layanan</a>
+                <a href="#testimonials"
+                    class="text-white/90 hover:text-gold font-medium text-sm transition-colors nav-link">Testimoni</a>
+                <a href="#kontak"
+                    class="px-5 py-2 rounded-full border border-gold text-gold hover:bg-gold hover:text-white transition-colors text-sm font-medium nav-btn">Reservasi</a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <div class="lg:hidden text-white cursor-pointer" id="mobile-menu-btn">
+                <i class="ph ph-list text-3xl"></i>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="lg:hidden hidden bg-white shadow-xl absolute top-full left-0 w-full border-t border-gray-100 flex-col py-4 px-6 space-y-4 origin-top">
+            <a href="#home" class="block text-gray-600 font-medium hover:text-gold mobile-link">Home</a>
+            <a href="#about" class="block text-gray-600 font-medium hover:text-gold mobile-link">Tentang Kami</a>
+            <a href="#services" class="block text-gray-600 font-medium hover:text-gold mobile-link">Layanan</a>
+            <a href="#testimonials" class="block text-gray-600 font-medium hover:text-gold mobile-link">Testimoni</a>
+            <a href="#kontak"
+                class="block text-center mt-4 px-5 py-2 rounded-full bg-gold text-white font-medium mobile-link">Reservasi</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen min-h-[600px] flex items-center bamboo-overlay">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=1600"
+                alt="Spa Background" class="w-full h-full object-cover object-center" fetchpriority="high"
+                decoding="sync" />
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-20 text-center md:text-left">
+            <div class="max-w-2xl mx-auto md:mx-0 gsap-hero">
+                <h1 class="text-white text-5xl md:text-7xl font-serif font-bold leading-tight mb-4 tracking-wide">
+                    Sense Massage <span class="text-gold">Spa</span><br>
+
+                </h1>
+                <p
+                    class="text-white/90 text-lg md:text-xl mb-8 font-light italic border-l-4 border-gold pl-4 max-w-lg mx-auto md:mx-0">
+                    "Manjakan diri Anda dengan sentuhan alam dan terapis berpengalaman untuk relaksasi tubuh dan
+                    pikiran."
+                </p>
+                <div class="flex flex-row flex-wrap items-center justify-center md:justify-start gap-4">
+                    <a href="#services"
+                        class="inline-flex items-center justify-center w-auto gap-2 bg-transparent border border-white text-white hover:bg-white hover:text-brown px-8 py-4 rounded-full font-semibold text-sm tracking-wide transition-colors">
+                        LIHAT LAYANAN <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                    <a href="#kontak"
+                        class="inline-flex items-center justify-center w-auto gap-2 bg-gold border border-gold text-white hover:bg-transparent hover:text-gold px-8 py-4 rounded-full font-semibold text-sm tracking-wide transition-colors">
+                        HUBUNGI KAMI
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white relative overflow-hidden">
+        <!-- Decorative element -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-sand rounded-bl-full opacity-50 z-0"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <!-- Image Side -->
+                <div class="w-full lg:w-1/2 relative gsap-fade-right">
+                    <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="images/ajib.webp" alt="Therapist" class="w-full h-[500px] object-cover" loading="lazy"
+                            decoding="async" />
+                        <div class="absolute inset-0 border-4 border-white/20 m-4 rounded-xl pointer-events-none"></div>
+                    </div>
+                    <!-- Decor badge -->
+                    <div
+                        class="absolute -bottom-6 -right-6 w-32 h-32 bg-brown rounded-full flex items-center justify-center shadow-xl border-4 border-white">
+
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="w-full lg:w-1/2 mt-10 lg:mt-0 gsap-fade-left">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-[1px] bg-gold"></div>
+                        <h4 class="text-gold font-medium tracking-widest uppercase text-sm">Tentang Kami</h4>
+                    </div>
+                    <h2 class="font-serif text-4xl md:text-5xl text-dark font-bold mb-6">Sense Massage <span
+                            class="text-brown">Spa</span></h2>
+                    <h3 class="text-xl text-gray-600 font-serif italic mb-6">Home Service Massage & Spa Eksklusif </h3>
+
+                    <p class="text-gray-500 mb-6 leading-relaxed">
+                        Sense Massage Spa hadir untuk memberikan pelayanan massage panggilan dan spa terbaik langsung ke
+                        tempat Anda, baik di rumah, kos, apartemen, maupun hotel di seluruh area Jabodetabek. Kami
+                        mengerti bahwa waktu Anda sangat berharga.
+                    </p>
+                    <p class="text-gray-500 mb-8 leading-relaxed">
+                        Dengan terapis wanita muda yang profesional, ramah, dan bersertifikat, kami menjamin pengalaman
+                        relaksasi yang menyegarkan tubuh serta menenangkan pikiran Anda setelah rutinitas yang padat.
+                    </p>
+
+                    <a href="#kontak"
+                        class="inline-block bg-brown text-white hover:bg-gold px-8 py-4 rounded-full font-medium text-sm tracking-wide transition-colors">
+                        HUBUNGI KAMI SEKARANG
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / Features -->
+    <section>
+        <!-- Banner Image -->
+        <div class="relative h-64 md:h-80 flex items-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="images/spa_ambience.webp" alt="Spa Ambience" class="w-full h-full object-cover object-center"
+                    loading="lazy" decoding="async" />
+                <div class="absolute inset-0 bg-brown/70 mix-blend-multiply"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full gsap-fade-right">
+                <h2 class="font-serif text-4xl md:text-5xl text-gold font-bold mb-2">Kenapa Kami?</h2>
+                <h3 class="text-white font-medium tracking-widest uppercase text-sm">Sense Massage Spa</h3>
+            </div>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="bg-white border-b border-gray-100 shadow-sm relative z-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gsap-features">
+                    <!-- Feature 1 -->
+                    <div
+                        class="text-center py-12 px-8 bg-white group transition-all duration-300 cursor-pointer hover:bg-gold border-x md:border-l-0 border-gray-100 md:border-transparent hover:border-gold">
+                        <i
+                            class="ph-fill ph-certificate text-5xl text-brown mb-6 inline-block group-hover:text-white group-hover:scale-110 transition-all duration-300"></i>
+                        <h3
+                            class="font-serif text-xl font-bold text-dark mb-4 group-hover:text-white transition-colors duration-300">
+                            Terapis Profesional</h3>
+                        <p
+                            class="text-gray-500 text-xs font-bold tracking-widest uppercase group-hover:text-white/80 transition-colors duration-300">
+                            TERAPIS TERLATIH DAN BERSERTIFIKAT KHUSUS</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div
+                        class="text-center py-12 px-8 bg-white border-x border-gray-100 group transition-all duration-300 cursor-pointer hover:bg-gold hover:border-gold">
+                        <i
+                            class="ph-fill ph-drop text-5xl text-brown mb-6 inline-block group-hover:text-white group-hover:scale-110 transition-all duration-300"></i>
+                        <h3
+                            class="font-serif text-xl font-bold text-dark mb-4 group-hover:text-white transition-colors duration-300">
+                            Produk Alami</h3>
+                        <p
+                            class="text-gray-500 text-xs font-bold tracking-widest uppercase group-hover:text-white/80 transition-colors duration-300">
+                            MINYAK ESENSIAL & LULUR KUALITAS PREMIUM</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div
+                        class="text-center py-12 px-8 bg-white group transition-all duration-300 cursor-pointer hover:bg-gold border-x lg:border-r-0 border-gray-100 lg:border-transparent hover:border-gold">
+                        <i
+                            class="ph-fill ph-clock-user text-5xl text-brown mb-6 inline-block group-hover:text-white group-hover:scale-110 transition-all duration-300"></i>
+                        <h3
+                            class="font-serif text-xl font-bold text-dark mb-4 group-hover:text-white transition-colors duration-300">
+                            Layanan Terbaik</h3>
+                        <p
+                            class="text-gray-500 text-xs font-bold tracking-widest uppercase group-hover:text-white/80 transition-colors duration-300">
+                            SIAP DATANG 24 JAM KE LOKASI ANDA</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div
+                        class="text-center py-12 px-8 bg-white group transition-all duration-300 cursor-pointer hover:bg-gold border-x lg:border-l-0 border-gray-100 lg:border-transparent hover:border-gold">
+                        <i
+                            class="ph-fill ph-map-pin text-5xl text-brown mb-6 inline-block group-hover:text-white group-hover:scale-110 transition-all duration-300"></i>
+                        <h3
+                            class="font-serif text-xl font-bold text-dark mb-4 group-hover:text-white transition-colors duration-300">
+                            Massage Panggilan ke Seluruh Jakarta</h3>
+                        <p
+                            class="text-gray-500 text-xs font-bold tracking-widest uppercase group-hover:text-white/80 transition-colors duration-300">
+                            KAMI MELAYANI SELURUH AREA JAKARTA DAN SEKITARNYA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-white">
+        <!-- Section Header (Dark Brown Strip) -->
+        <div class="bg-brown py-16 relative overflow-hidden">
+            <div
+                class="absolute inset-0 bg-[url('images/bamboo_bg.webp')] bg-cover bg-center opacity-20 mix-blend-overlay pointer-events-none z-0">
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center gsap-fade-up">
+                <h2 class="font-serif text-4xl md:text-5xl text-gold font-bold mb-3">Layanan <span
+                        class="text-white">Spa</span></h2>
+                <p class="text-white/90 font-medium text-sm tracking-wide">Tentukan massage sesuai dengan kebutuhan Anda
+                </p>
+            </div>
+        </div>
+
+        <!-- Services Grid (White Background Below Header) -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gsap-services">
+
+                <!-- Service 1 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group border border-gray-100">
+                    <div class="h-56 overflow-hidden">
+                        <img src="images/massage_and_reflexology.png" alt="Massage Dan refrexologi"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            loading="lazy" decoding="async">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-bold text-dark text-lg mb-4 group-hover:text-gold transition-colors">Massage
+                            Dan Refrexologi </h3>
+                        <div class="w-full h-[1px] bg-gray-100 mb-5"></div>
+                        <div class="mt-auto">
+                            <a href="https://wa.me/628999921727?text=Halo%20Sense%20Massage%20Spa,%20saya%20ingin%20pesan%20Massage%20Dan%20refrexologi"
+                                target="_blank"
+                                class="inline-block bg-gold text-white px-6 py-2 rounded-full font-bold text-xs tracking-widest uppercase hover:bg-brown transition-colors shadow-sm">
+                                BOOKING
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group border border-gray-100">
+                    <div class="h-56 overflow-hidden">
+                        <img src="images/spa_ambience.webp" alt="Full Body Massage"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            loading="lazy" decoding="async">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-bold text-dark text-lg mb-4 group-hover:text-gold transition-colors">Full Body
+                            Massage</h3>
+                        <div class="w-full h-[1px] bg-gray-100 mb-5"></div>
+                        <div class="mt-auto">
+                            <a href="https://wa.me/628999921727?text=Halo%20Sense%20Massage%20Spa,%20saya%20ingin%20pesan%20Full%20Body%20Massage"
+                                target="_blank"
+                                class="inline-block bg-gold text-white px-6 py-2 rounded-full font-bold text-xs tracking-widest uppercase hover:bg-brown transition-colors shadow-sm">
+                                BOOKING
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group border border-gray-100">
+                    <div class="h-56 overflow-hidden">
+                        <img src="images/reflexology.png" alt="Reflexology"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            loading="lazy" decoding="async">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-bold text-dark text-lg mb-4 group-hover:text-gold transition-colors">
+                            Reflexology</h3>
+                        <div class="w-full h-[1px] bg-gray-100 mb-5"></div>
+                        <div class="mt-auto">
+                            <a href="https://wa.me/628999921727?text=Halo%20Sense%20Massage%20Spa,%20saya%20ingin%20pesan%20Reflexology"
+                                target="_blank"
+                                class="inline-block bg-gold text-white px-6 py-2 rounded-full font-bold text-xs tracking-widest uppercase hover:bg-brown transition-colors shadow-sm">
+                                BOOKING
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group border border-gray-100">
+                    <div class="h-56 overflow-hidden">
+                        <img src="images/service_scrub.webp" alt="Massage Tradisional"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            loading="lazy" decoding="async">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-bold text-dark text-lg mb-4 group-hover:text-gold transition-colors">Massage
+                            Tradisional</h3>
+                        <div class="w-full h-[1px] bg-gray-100 mb-5"></div>
+                        <div class="mt-auto">
+                            <a href="https://wa.me/628999921727?text=Halo%20Sense%20Massage%20Spa,%20saya%20ingin%20pesan%20Massage%20Tradisional"
+                                target="_blank"
+                                class="inline-block bg-gold text-white px-6 py-2 rounded-full font-bold text-xs tracking-widest uppercase hover:bg-brown transition-colors shadow-sm">
+                                BOOKING
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group border border-gray-100">
+                    <div class="h-56 overflow-hidden">
+                        <img src="images/service_facial.webp" alt="Aromatherapy"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            loading="lazy" decoding="async">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-bold text-dark text-lg mb-4 group-hover:text-gold transition-colors">
+                            Aromatherapy</h3>
+                        <div class="w-full h-[1px] bg-gray-100 mb-5"></div>
+                        <div class="mt-auto">
+                            <a href="https://wa.me/628999921727?text=Halo%20Sense%20Massage%20Spa,%20saya%20ingin%20pesan%20Aromatherapy"
+                                target="_blank"
+                                class="inline-block bg-gold text-white px-6 py-2 rounded-full font-bold text-xs tracking-widest uppercase hover:bg-brown transition-colors shadow-sm">
+                                BOOKING
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Big Banner Section -->
+    <section class="relative h-[60vh] min-h-[400px] flex items-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80&w=1800"
+                alt="Spa Relaxation" class="w-full h-full object-cover" id="parallax-banner" loading="lazy"
+                decoding="async" />
+            <div class="absolute inset-0 mix-blend-multiply"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center text-white w-full">
+            <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">Kembalikan Kebugaran Anda</h2>
+            <p class="text-lg text-white/90 max-w-2xl mx-auto mb-8 font-light">Tidak perlu keluar rumah menembus
+                kemacetan. Kami yang akan datang membawa relaksasi spa profesional ke pintu Anda.</p>
+            <a href="#kontak" class="inline-block btn-gold px-8 py-4 rounded-full font-medium text-sm tracking-wide">
+                BOOKING SEKARANG
+            </a>
+        </div>
+    </section>
+
+    <!-- Massage Panggilan 24 Jam & Partners -->
+    <section class="py-20 bg-brown bamboo-overlay text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12 gsap-fade-up">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold mb-4">Massage Panggilan <span class="text-gold">24
+                        Jam</span></h2>
+                <p class="text-white/80 font-light max-w-2xl mx-auto">Kami melayani panggilan massage dan spa untuk
+                    seluruh area
+                    Jabodetabek dan sekitarnya. Terapis kami siap sedia melayani
+                    Anda.</p>
+            </div>
+
+            <!-- Team Gallery Grid (Small) -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 gsap-gallery">
+                <div class="rounded-lg overflow-hidden h-40">
+                    <img src="images/lilin.png" alt="Team"
+                        class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="rounded-lg overflow-hidden h-40">
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=400"
+                        alt="Team" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="rounded-lg overflow-hidden h-40">
+                    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&q=80&w=400"
+                        alt="Team" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                        loading="lazy" decoding="async">
+                </div>
+                <div class="rounded-lg overflow-hidden h-40">
+                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80&w=400"
+                        alt="Team" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                        loading="lazy" decoding="async">
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Contact & Maps Section -->
+    <section id="kontak" class="py-24 bg-sand relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 gsap-fade-up">
+                <h2 class="font-serif text-3xl md:text-4xl text-brown font-bold mb-4">Kontak</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hubungi kami untuk layanan massage panggilan ke lokasi Anda.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+                <!-- Contact Info -->
+                <div
+                    class="bg-white p-8 md:p-12 rounded-2xl shadow-lg border border-gray-100 gsap-fade-right flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-serif text-2xl font-bold text-dark mb-8">Hubungi Kami</h3>
+                        <ul class="space-y-6">
+                            <li class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 text-gold">
+                                    <i class="ph-fill ph-map-pin text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-dark text-sm mb-1">Alamat Spa</h4>
+                                    <p class="text-gray-500 text-sm leading-relaxed">Kawasan Sudirman, Jakarta Selatan,
+                                        DKI Jakarta</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 text-gold">
+                                    <i class="ph-fill ph-whatsapp-logo text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-dark text-sm mb-1">WhatsApp (24 Jam)</h4>
+                                    <a href="https://wa.me/628999921727?text=Hi%20Sense%20Massage%20Spa.%20Saya%20ingin%20memesan%20untuk%20hari%20ini"
+                                        target="_blank"
+                                        class="text-gray-500 text-sm hover:text-gold transition-colors">0899 9921
+                                        727</a>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 text-gold">
+                                    <i class="ph-fill ph-clock text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-dark text-sm mb-1">Jam Operasional</h4>
+                                    <p class="text-gray-500 text-sm">Buka Setiap Hari: 24 jam</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-10">
+                        <a href="https://wa.me/628999921727?text=Hi%20Sense%20Massage%20Spa.%20Saya%20ingin%20memesan%20untuk%20hari%20ini"
+                            target="_blank"
+                            class="inline-flex items-center justify-center gap-2 w-full bg-brown text-white py-3.5 px-6 rounded-md hover:bg-dark transition-all shadow-md font-medium group">
+                            <i class="ph ph-calendar-check text-lg group-hover:scale-110 transition-transform"></i>
+                            Reservasi Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Maps -->
+                <div
+                    class="h-full min-h-[400px] rounded-2xl overflow-hidden shadow-lg gsap-fade-left border border-gray-100 bg-gray-50">
+                    <iframe src="https://maps.google.com/maps?q=-6.1944491,106.8229198&hl=en&z=13&output=embed"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="w-full h-full"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark pt-20 pb-10 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 border-b border-gray-700 pb-16">
+                <!-- Brand -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <img src="images/logo1.jpeg" alt="Sense Massage Spa Logo" class="h-12 w-auto rounded-md">
+                        <span class="font-serif font-bold text-2xl text-white tracking-wide">Sense Massage <span
+                                class="text-gold font-light">Spa</span></span>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-6">Layanan massage dan spa panggilan profesional
+                        24
+                        Jam di Jakarta. Mengembalikan kebugaran tubuh Anda dengan sentuhan terapis berpengalaman.</p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-white transition-colors"><i
+                                class="ph-fill ph-instagram-logo text-xl"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gold hover:text-white transition-colors"><i
+                                class="ph-fill ph-facebook-logo text-xl"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="font-serif font-bold text-white mb-6">Layanan Kami</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-gold transition-colors">Traditional Massage</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors">Aromatherapy</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors">Body Scrub / Lulur</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors">Reflexology</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors">Paket Royal Spa</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div>
+                    <h4 class="font-serif font-bold text-white mb-6">Informasi</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#about" class="hover:text-gold transition-colors">Tentang Kami</a></li>
+                        <li><a href="#testimonials" class="hover:text-gold transition-colors">Testimoni</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors">Syarat & Ketentuan</a></li>
+                        <li><a href="#" class="hover:text-gold transition-colors">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-serif font-bold text-white mb-6">Kontak Reservasi</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li class="flex items-start gap-3">
+                            <i class="ph-fill ph-whatsapp-logo text-gold text-xl mt-0.5"></i>
+                            <div>
+                                <span class="block font-medium text-white">WhatsApp 24 Jam</span>
+                                <a href="https://wa.me/628999921727?text=Hi%20Sense%20Massage%20Spa.%20Saya%20ingin%20memesan%20untuk%20hari%20ini"
+                                    class="hover:text-gold transition-colors">0899 9921
+                                    727</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph-fill ph-envelope-simple text-gold text-xl mt-0.5"></i>
+                            <div>
+                                <span class="block font-medium text-white">Email</span>
+                                <a href="mailto:Sensemassagejkt@gmail.com"
+                                    class="hover:text-gold transition-colors">Sensemassagejkt@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph-fill ph-map-pin text-gold text-xl mt-0.5"></i>
+                            <div>
+                                <span class="block font-medium text-white">Area Layanan</span>
+                                <span>Seluruh Wilayah Jabodetabek</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+                <p>&copy; Sense Massage Spa. All rights reserved.</p>
+                \
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-6 left-0 w-full z-50 flex justify-between px-4 md:px-6 pointer-events-none">
+        <!-- Left: Hubungi Kami -->
+        <a href="#kontak"
+            class="w-12 h-12 md:w-14 md:h-14 bg-brown text-white rounded-full flex items-center justify-center shadow-lg shadow-brown/30 hover:bg-dark transition-colors group relative pointer-events-auto">
+            <i class="ph-fill ph-phone-call text-2xl md:text-3xl"></i>
+            <div
+                class="absolute left-14 md:left-16 bg-white text-dark text-xs font-medium px-3 py-2 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none hidden md:block">
+                Hubungi Kami
+            </div>
+        </a>
+
+        <!-- Right: WhatsApp -->
+        <a href="https://wa.me/628999921727?text=Hi%20Sense%20Massage%20Spa.%20Saya%20ingin%20memesan%20untuk%20hari%20ini"
+            target="_blank"
+            class="w-12 h-12 md:w-14 md:h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg shadow-green-500/30 hover:bg-[#1ebe57] transition-colors float-wa group relative pointer-events-auto">
+            <i class="ph-fill ph-whatsapp-logo text-2xl md:text-3xl"></i>
+            <div
+                class="absolute right-14 md:right-16 bg-white text-dark text-xs font-medium px-3 py-2 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none hidden md:block">
+                Pesan Sekarang
+            </div>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
